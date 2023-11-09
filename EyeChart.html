@@ -1,8 +1,8 @@
 <!DOCTYPE <html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-	<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     <style> 
     #body {
     min-height: 1000;
@@ -177,17 +177,17 @@
     background-color: blue;
     }
 
-	</style>
+    </style>
 </head>
 <body onload="main.py">
-	<div class="top-navbar">
-		<div class="title">EYE EXAM GRID</div>
-		<button class="reload-button" py-click="snellen_chart(0, 0)">Reload Chart</button>
-		<div class="style-dropdown">
-			<button class="style-dropbtn">Pick Style 
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class="dropdown-style-content-1">
+    <div class="top-navbar">
+        <div class="title">EYE EXAM GRID</div>
+        <button class="reload-button" py-click="snellen_chart(0, 0)">Reload Chart</button>
+        <div class="style-dropdown">
+            <button class="style-dropbtn">Pick Style 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-style-content-1">
                 <a href="#">Snellen&nbsp&nbsp=></a>
                 <div class="dropdown-snellen-content">
                     <a href="#" py-click="snellen_chart(0, 0)">Uppercase</a>
@@ -198,8 +198,8 @@
                     <a href="#" py-click="snellen_chart(0, 5)">Mixed-casing+Numbers</a>
                     <a href="#" py-click="snellen_chart(0, 6)">Numbers</a>
                 </div>
-			</div>
-			<div class="dropdown-style-content-2">
+            </div>
+            <div class="dropdown-style-content-2">
                 <a href="#">Classic&nbsp&nbsp&nbsp=></a>
                 <div class="dropdown-classic-content">
                     <a href="#" py-click="snellen_chart(1, 0)">Uppercase</a>
@@ -211,19 +211,19 @@
                     <a href="#" py-click="snellen_chart(1, 6)">Numbers</a>
                 </div>
             </div>
-		</div>
-		<div class="font-dropdown">
-			<button class="font-dropbtn">Pick Font 
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class="dropdown-font-content">
-				<a href="a" onclick=changeStyle()>Courier</a>
-				<a href="b" onclick=changeGaramond()>Garamound</a>
-				<a href="c" onclick=changeTimes()>Times New Roman</a>
-			</div>
-		</div>
-	</div> 
-	<div class="content" style="width: 100%; display: table;">
+        </div>
+        <div class="font-dropdown">
+            <button class="font-dropbtn">Pick Font 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-font-content">
+                <a href="a" onclick=changeStyle()>Courier</a>
+                <a href="b" onclick=changeGaramond()>Garamound</a>
+                <a href="c" onclick=changeTimes()>Times New Roman</a>
+            </div>
+        </div>
+    </div> 
+    <div class="content" style="width: 100%; display: table;">
         <div style="display: table-row; height: 100%">
             <h1 style="color:black">
                 <div id ="grid" style="width: 75%; display: table-cell; float: left;"> 
@@ -240,17 +240,17 @@
                     <p id="m9" p style=font-size:10;letter-spacing:25px;></p>
                 </div>
                 <div class="numbers" style="display: table-cell; float: rigth;"> 
-					<p id="blank" p style="color: white; font-size: 150px">H</p>
+                    <p id="blank" p style="color: white; font-size: 150px">H</p>
                     <p id="1" p style="font-size:30;letter-spacing:25px">1</p>
-					<p id="blank" p style="color: white; font-size: 250">I</p>
+                    <p id="blank" p style="color: white; font-size: 250">I</p>
                     <p id="2" p style="font-size:30;letter-spacing:25px">2</p>
-					<p id="blank" p style="color: white; font-size: 200px">R</p>
+                    <p id="blank" p style="color: white; font-size: 200px">R</p>
                     <p id="3" p style="font-size:30;letter-spacing:25px">3</p>
-					<p id="blank" p style="color: white; font-size: 150px">E</p>
+                    <p id="blank" p style="color: white; font-size: 150px">E</p>
                     <p id="4" p style="font-size:30;letter-spacing:25px">4</p>
-					<p id="blank" p style="color: white; font-size: 100px">M</p>
+                    <p id="blank" p style="color: white; font-size: 100px">M</p>
                     <p id="5" p style="font-size:30;letter-spacing:25px">5</p>
-					<p id="blank" p style="color: white; font-size: 10">E</p>
+                    <p id="blank" p style="color: white; font-size: 10">E</p>
                     <p id="6" p style="font-size:30;letter-spacing:25px">6</p>
                     <p id="7" p style="font-size:30;letter-spacing:25px">7</p>
                     <p id="8" p style="font-size:30;letter-spacing:25px">8</p>
@@ -258,20 +258,20 @@
                 </div>
             </h1>
         </div>
-	</div>
-	<div class="bottom-navbar">
-		<a href="#">linkedin.com/in/johnhawkins3d</b>
-		<a href=mailto:"johnhawkins3d@gmail.com">johnhawkins3d@gmail.com</b>
-		<a href="#">Created by John Hawkins</b>
-		<div class="about-dropdown">
-			<a href="#">About This Project</a>
-			<div class="dropdown-about-content">
-				<a href="#">The Eye Chart was created with: Python, PyScript, and HTML.<br>
-				This project is for informational and demonstration purposes only.</a>
-			</div>
-		</div>
-	</div> 
-	<py-script src="./main.py"></py-script>
+    </div>
+    <div class="bottom-navbar">
+        <a href="#">linkedin.com/in/johnhawkins3d</b>
+        <a href=mailto:"johnhawkins3d@gmail.com">johnhawkins3d@gmail.com</b>
+        <a href="#">Created by John Hawkins</b>
+        <div class="about-dropdown">
+            <a href="#">About This Project</a>
+            <div class="dropdown-about-content">
+                <a href="#">The Eye Chart was created with: Python, PyScript, and HTML.<br>
+                This project is for informational and demonstration purposes only.</a>
+            </div>
+        </div>
+    </div> 
+    <py-script src="./main.py"></py-script>
     <script>
     function changeStyle(){
         var element = document.getElementById("content");
